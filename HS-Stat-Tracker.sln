@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31205.134
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HS-Stat-Tracker", "HS-Stat-Tracker\HS-Stat-Tracker.csproj", "{28A0586F-15B9-4444-86DD-9D26A0EF1ACC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{28A0586F-15B9-4444-86DD-9D26A0EF1ACC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28A0586F-15B9-4444-86DD-9D26A0EF1ACC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28A0586F-15B9-4444-86DD-9D26A0EF1ACC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28A0586F-15B9-4444-86DD-9D26A0EF1ACC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B1760B98-5566-419D-AE57-961B74F75561}
+	EndGlobalSection
+EndGlobal
