@@ -5,4 +5,9 @@
     <RootNamespace>HS_Stat_Tracker_BusinessLayer</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\HS-Stat_Tracker_DAL\HS_Stat_Tracker_DAL.csproj" />
+    <ProjectReference Include="..\HS_Stat_Tracker_Domain\HS_Stat_Tracker_Domain.csproj" />
+  </ItemGroup>
+
 </Project>

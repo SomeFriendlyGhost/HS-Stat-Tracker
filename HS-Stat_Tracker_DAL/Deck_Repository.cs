@@ -4,11 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HS_Stat_Tracker_Domain
+namespace HS_Stat_Tracker_DAL
 {
-    public class Deck
+    class Deck_Repository
     {
-        public int ID;
-        public Card[] decklist;
     }
 }

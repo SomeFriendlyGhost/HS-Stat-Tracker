@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HS_Stat_Tracker_Domain
+namespace HS_Stat_Tracker_Domain.Domain_Interfaces
 {
-    public class Deck
+    interface ICard
     {
-        public int ID;
-        public Card[] decklist;
+        public string type { get; set; }
+
     }
 }

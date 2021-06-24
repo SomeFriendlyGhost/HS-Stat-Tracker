@@ -9,4 +9,9 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.1.4" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\HS-Stat-Tracker-BusinessLayer\HS_Stat_Tracker_BusinessLayer.csproj" />
+    <ProjectReference Include="..\HS_Stat_Tracker_Domain\HS_Stat_Tracker_Domain.csproj" />
+  </ItemGroup>
+
 </Project>
