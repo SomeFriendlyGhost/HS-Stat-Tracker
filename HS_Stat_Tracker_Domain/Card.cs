@@ -13,6 +13,7 @@ namespace HS_Stat_Tracker_Domain
         public string type { get; set; }
         public string flavor { get; set; }
         public string id { get; set; }
+//        public string[] mechanics { get; set; }
         public string name { get; set; }
         public string rarity { get; set; }
         public string set { get; set; }

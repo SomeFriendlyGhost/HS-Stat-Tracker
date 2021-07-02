@@ -8,27 +8,23 @@ using System.Threading.Tasks;
 
 namespace HS_Stat_Tracker_DAL
 {
-    class Context : DbContext
+    public class Context : DbContext
     {
-        public DbSet<Card> cards { get; set; }
-        public DbSet<Minion> minions { get; set; }
-        public DbSet<Spell> spells { get; set; }
-        public DbSet<Deck> decks { get; set; }
-
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        public Context(DbContextOptions<Context> options):base(options)
         {
 
-            optionsBuilder.UseSqlServer(@"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=Stat-Tracker;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
         }
+        public DbSet<Card> Cards { get; set; }
+        public DbSet<Minion> Minions { get; set; }
+        public DbSet<Spell> Spells { get; set; }
+        public DbSet<Deck> Decks { get; set; }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Deck>()
                 .HasKey(c => c.ID);
 
-            modelBuilder.Entity<Minion>()
-                .HasKey(c => c.dbfId);
-
-            modelBuilder.Entity<Spell>()
+            modelBuilder.Entity<Card>()
                 .HasKey(c => c.dbfId);
 
             modelBuilder.Entity<Card>()

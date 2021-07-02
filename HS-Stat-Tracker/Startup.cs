@@ -11,6 +11,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using HS_Stat_Tracker_DAL;
+using Microsoft.EntityFrameworkCore;
 
 namespace HS_Stat_Tracker
 {
@@ -26,6 +28,8 @@ namespace HS_Stat_Tracker
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddDbContext<Context>(
+            options => options.UseSqlServer("name=ConnectionStrings:DefaultConnection"));
 
             services.AddControllers();
             services.AddSwaggerGen(c =>

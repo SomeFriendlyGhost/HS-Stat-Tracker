@@ -9,7 +9,7 @@ namespace HS_Stat_Tracker_Domain
     public class Spell: Card
     {
 
-    public string spellSchool;
+    public string spellSchool { get; set; }
 
     }
 }
